@@ -28,6 +28,16 @@ body {
 }
 
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    outline: 2px solid red; 
+}
+
 /* Логотип */
 
 /* Общие настройки лого */
@@ -138,6 +148,15 @@ body {
 
 /* Кнопка-герой */
 .hero-button {
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 14px 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     color: var(--white-text);
     background-color: var(--ascent-color);
 
@@ -148,6 +167,11 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #188CE8;
 }
 
 
