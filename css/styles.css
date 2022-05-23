@@ -24,6 +24,9 @@ body {
 
 /* Удаление точек у спсиков */
 .list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
 }
 
@@ -34,8 +37,8 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    
-    outline: 2px solid red; 
+
+    outline: 2px solid red;
 }
 
 /* Логотип */
@@ -137,6 +140,12 @@ body {
 
 /* Герой-заголовок */
 .hero-title {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    width: 696px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -177,11 +186,21 @@ body {
 
 /* Все секции */
 .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     color: var(--primary-text-color);
+}
+
+.section.no-padding-top {
+    padding-top: 0;
 }
 
 /* Заголовок секции */
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -192,6 +211,9 @@ body {
 
 /* Список преимуществ */
 .feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -202,6 +224,8 @@ body {
 
 /* Описание преимуществ, каждого типа */
 .feature-list p {
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 1.7;
 }
@@ -209,6 +233,9 @@ body {
 
 /* имена сотрудников */
 .title-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -219,6 +246,9 @@ body {
 
 /* должность сотрудника */
 .title-position {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
