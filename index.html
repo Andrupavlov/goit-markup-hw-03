@@ -24,25 +24,36 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
-          <a href="./index.html" class="logo">
-            <span class="logo-1part">Web</span>
-            <span class="logo-2part">Studio</span>
-          </a>
+      <div class="container main-container">
+
+        <nav class="main-container-nav">
+
+          <div class="all-logo">
+            <a href="./index.html" class="logo">
+              <span class="logo-1part">Web</span>
+              <span class="logo-2part">Studio</span>
+            </a>
+          </div>
+
           <ul class="site-nav list">
-            <li><a href="./index.html" class="current">Студия</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
+
         </nav>
-        <ul class="list">
-          <li>
+
+        <ul class="list contacts-header">
+          <li class="item">
             <a href="mailto:info@devstudio.com" target="_blank" class="contacts"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -62,28 +73,28 @@
           <ul class="feature-list list">
             <li>
               <h3 class="title">Внимание к деталям</h3>
-              <p>
+              <p class="paragraph">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
             <li>
               <h3 class="title">Пунктуальность</h3>
-              <p>
+              <p class="paragraph">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
             <li>
               <h3 class="title">Планирование</h3>
-              <p>
+              <p class="paragraph">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
             <li>
               <h3 class="title">Современные технологии</h3>
-              <p>
+              <p class="paragraph">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -95,9 +106,10 @@
       <section class="section no-padding-top">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
+          <ul class="img-list list">
             <li>
               <img
+                class="img"
                 src="./images/what_doing_01.jpg"
                 alt="Набор кода на клавиатуре"
                 width="370"
@@ -105,6 +117,7 @@
             </li>
             <li>
               <img
+                class="img"
                 src="./images/what_doing_02.jpg"
                 alt="Разработка для мобильного"
                 width="370"
@@ -112,6 +125,7 @@
             </li>
             <li>
               <img
+                class="img"
                 src="./images/what_doing_03.jpg"
                 alt="Работа с цветом на планшете"
                 width="370"
@@ -124,9 +138,10 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="team-list list">
             <li>
               <img
+                class="img"
                 src="./images/igor_demyanenko.jpg"
                 alt="фото Игорь Демьяненко"
                 width="270"
@@ -136,6 +151,7 @@
             </li>
             <li>
               <img
+                class="img"
                 src="./images/olga_repina.jpg"
                 alt="фото Ольга Репина"
                 width="270"
@@ -145,6 +161,7 @@
             </li>
             <li>
               <img
+                class="img"
                 src="./images/nikolaj_tarasov.jpg"
                 alt="фото Николай Тарасов"
                 width="270"
@@ -154,6 +171,7 @@
             </li>
             <li>
               <img
+                class="img"
                 src="./images/mihail_ermakov.jpg"
                 alt="фото Михаил Ермаков"
                 width="270"

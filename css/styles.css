@@ -38,7 +38,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 /* Логотип */
@@ -70,11 +70,19 @@ body {
     line-height: 1.2;
 }
 
+/* Навигация по сайту */
+/* Навигация по сайту - при наведении */
 
 /* список меню */
+.site-nav {
+    display: flex;
+}
 
-/* Навигация по сайту */
-.site-nav a {
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
 
     font-style: normal;
@@ -84,9 +92,14 @@ body {
     letter-spacing: 0.02em;
 
     text-decoration: none;
+
+    /* outline: 2px solid green; */
 }
 
-/* Навигация по сайту - при наведении */
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--ascent-color);
@@ -104,7 +117,6 @@ body {
 .site-nav .current {
     color: var(--ascent-color);
 }
-
 
 /* контакты */
 
@@ -135,6 +147,39 @@ body {
     text-decoration: none;
 }
 
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-container-nav {
+    display: flex;
+}
+
+.all-logo {
+    margin-right: 93px;
+}
+
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-header .contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contacts-header .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.main-container .all-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 /* герой */
 
@@ -184,6 +229,12 @@ body {
 }
 
 
+/* Удаление 2 пикселей у img */
+.img {
+    display: block;
+}
+
+
 /* Все секции */
 .section {
     padding-top: 94px;
@@ -209,6 +260,12 @@ body {
     text-align: center;
 }
 
+/* секция с преимуществами */
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Список преимуществ */
 .feature-list .title {
     margin-top: 0;
@@ -222,14 +279,27 @@ body {
     text-transform: uppercase;
 }
 
+
 /* Описание преимуществ, каждого типа */
-.feature-list p {
+.feature-list .paragraph {
+    width: 270px;
+
+    margin-top: 0;
     margin-bottom: 0;
 
     font-size: 14px;
     line-height: 1.7;
 }
 
+.img-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* имена сотрудников */
 .title-name {
