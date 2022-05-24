@@ -11,6 +11,7 @@
     --white-text: #FFFFFF;
     --ascent-color: #2196F3;
     --background-color: #FFFFFF;
+    --second-background-color: #F5F4FA;
     --footer-hero-color: #2F303A;
 }
 
@@ -37,8 +38,6 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
-    /* outline: 2px solid red; */
 }
 
 /* Логотип */
@@ -92,8 +91,6 @@ body {
     letter-spacing: 0.02em;
 
     text-decoration: none;
-
-    /* outline: 2px solid green; */
 }
 
 .site-nav .item:not(:last-child) {
@@ -181,7 +178,19 @@ body {
     padding-bottom: 25px;
 }
 
+/* Так можно?????????????????? */
+.header-rect {
+    background-color: #ECECEC;
+    border: 0.5px solid #ECECEC;
+}
+
 /* герой */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--footer-hero-color);
+}
 
 /* Герой-заголовок */
 .hero-title {
@@ -190,6 +199,8 @@ body {
     margin-bottom: 30px;
     margin-left: auto;
     width: 696px;
+
+    color: var(--white-text);
 
     font-weight: 900;
     font-size: 44px;
@@ -210,6 +221,8 @@ body {
 
     margin-left: auto;
     margin-right: auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     color: var(--white-text);
     background-color: var(--ascent-color);
@@ -301,6 +314,23 @@ body {
     justify-content: space-between;
 }
 
+/* Секуия с сотрудниками */
+.ouer-teem-section {
+    background-color: var(--second-background-color);
+}
+
+/* Карточка сотрудника */
+.employee {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-color);
+}
+
+.employee-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* имена сотрудников */
 .title-name {
     margin-top: 0;
@@ -325,11 +355,27 @@ body {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--footer-hero-color);
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer .logo .logo-2part {
+    color: var(--white-text);
 }
 
 /* Физический адрес компании */
 .geo-address {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
+
     color: var(--white-text);
 
     font-style: normal;
@@ -337,13 +383,40 @@ body {
     line-height: 1.7;
 }
 
+.footer .contacts {
+    display: block;
+}
 
-/* Страница портфолио */
+.contacts-email {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+
+/*--------------------- Страница портфолио --------------------- */
+
 
 /* Кнопки фильтра */
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .filter-button {
+    display: block;
+    border: none;
+    min-width: 73px;
+    height: 38px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+
     color: var(--title-text-color);
-    background-color: var(--background-color);
+    background-color: #F5F4FA;
 
     font-weight: 500;
     font-size: 16px;
@@ -351,8 +424,14 @@ body {
     text-align: center;
 }
 
+.list .button:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-button:hover,
 .filter-button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
     color: var(--white-text);
     background-color: var(--ascent-color);
 
@@ -362,11 +441,56 @@ body {
     text-align: center;
 }
 
+.filter-section {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
 /* Список проектов */
 
-/* Заголовок проекта */
+.project-card img {
+    display: block;
+}
+
+/* Коробка со списком проектов */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Список карточек проектов */
+.project-card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    outline: 1px solid #EEEEEE;
+
+    /* как рамку поместить под картинку? */
+    /* border: 1px solid #EEEEEE; */
+}
+
+/* Убрать у проавой 3й карточке марджин */
+.project-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* Выбрать и убрать марджин у карточек снизу */
+.project-card:nth-last-child(-n +3) {
+    margin-bottom: 0;
+}
+
+/* Описание проекта */
+.protject-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Заголовок */
 .projects-list .title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -376,7 +500,10 @@ body {
 }
 
 /* Тип проекта */
-.projects-list p {
+.project-card p {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--primary-text-color);
 
     font-size: 16px;

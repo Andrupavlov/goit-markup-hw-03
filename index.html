@@ -25,9 +25,7 @@
   <body>
     <header>
       <div class="container main-container">
-
         <nav class="main-container-nav">
-
           <div class="all-logo">
             <a href="./index.html" class="logo">
               <span class="logo-1part">Web</span>
@@ -44,7 +42,6 @@
             </li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-
         </nav>
 
         <ul class="list contacts-header">
@@ -58,6 +55,9 @@
           </li>
         </ul>
       </div>
+
+      <!-- Так можно??????????????????????????????? -->
+      <div class="header-rect"></div>
     </header>
 
     <main>
@@ -135,49 +135,57 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section ouer-teem-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
-            <li>
+            <li class="employee">
               <img
                 class="img"
                 src="./images/igor_demyanenko.jpg"
                 alt="фото Игорь Демьяненко"
                 width="270"
               />
-              <h3 class="title-name">Игорь Демьяненко</h3>
-              <p class="title-position">Product Designer</p>
+              <div class="employee-info">
+                <h3 class="title-name">Игорь Демьяненко</h3>
+                <p class="title-position">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="employee">
               <img
                 class="img"
                 src="./images/olga_repina.jpg"
                 alt="фото Ольга Репина"
                 width="270"
               />
-              <h3 class="title-name">Ольга Репина</h3>
-              <p class="title-position">Frontend Developer</p>
+              <div class="employee-info">
+                <h3 class="title-name">Ольга Репина</h3>
+                <p class="title-position">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="employee">
               <img
                 class="img"
                 src="./images/nikolaj_tarasov.jpg"
                 alt="фото Николай Тарасов"
                 width="270"
               />
-              <h3 class="title-name">Николай Тарасов</h3>
-              <p class="title-position">Marketing</p>
+              <div class="employee-info">
+                <h3 class="title-name">Николай Тарасов</h3>
+                <p class="title-position">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="employee">
               <img
                 class="img"
                 src="./images/mihail_ermakov.jpg"
                 alt="фото Михаил Ермаков"
                 width="270"
               />
-              <h3 class="title-name">Михаил Ермаков</h3>
-              <p class="title-position">UI Designer</p>
+              <div class="employee-info">
+                <h3 class="title-name">Михаил Ермаков</h3>
+                <p class="title-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -199,7 +207,7 @@
               <a
                 href="mailto:info@devstudio.com"
                 target="_blank"
-                class="contacts"
+                class="contacts contacts-email"
                 >info@devstudio.com</a
               >
             </li>
