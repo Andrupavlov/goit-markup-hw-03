@@ -40,6 +40,12 @@ body {
     padding-right: 15px;
 }
 
+.header {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #ECECEC;
+}
+
 /* Логотип */
 
 /* Общие настройки лого */
@@ -176,12 +182,6 @@ body {
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
-}
-
-/* Так можно?????????????????? */
-.header-rect {
-    background-color: #ECECEC;
-    border: 0.5px solid #ECECEC;
 }
 
 /* герой */
@@ -462,10 +462,6 @@ body {
 .project-card {
     margin-right: 30px;
     margin-bottom: 30px;
-    outline: 1px solid #EEEEEE;
-
-    /* как рамку поместить под картинку? */
-    /* border: 1px solid #EEEEEE; */
 }
 
 /* Убрать у проавой 3й карточке марджин */
@@ -484,6 +480,10 @@ body {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
 }
 
 /* Заголовок */
